@@ -1,4 +1,4 @@
-package main.chess;
+package main.program;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.FileNotFoundException;
 
-import main.Home.pgnreader;
+import main.home.pgnreader;
 
 public class GUI extends JFrame {
     private pgnreader pgn = null;
@@ -204,7 +204,7 @@ public class GUI extends JFrame {
         chessBoard.setBorder(new LineBorder(Color.BLACK));
         gui.add(chessBoard);
 
-        // create the main.chess board squares
+        // create the main.program board squares
         Insets buttonMargin = new Insets(0, 0, 0, 0);
         for (int i = 0; i < chessBoardSquares.length; i++) {
             for (int j = 0; j < chessBoardSquares[i].length; j++) {
@@ -226,7 +226,7 @@ public class GUI extends JFrame {
         }
 
 
-        // fill the main.chess board
+        // fill the main.program board
         chessBoard.add(new JLabel(""));
         for (int i = 0; i < 8; i++) {
             chessBoard.add(
@@ -257,40 +257,40 @@ public class GUI extends JFrame {
             for (int j = 0; j < 8; j++) {
                 switch (chars[i][j]) {
                     case 'R':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\wr.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\wr.png"));
                         break;
                     case 'r':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\br.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\br.png"));
                         break;
                     case 'N':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\wn.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\wn.png"));
                         break;
                     case 'n':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\bn.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\bn.png"));
                         break;
                     case 'B':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\wb.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\wb.png"));
                         break;
                     case 'b':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\bb.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\bb.png"));
                         break;
                     case 'Q':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\wq.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\wq.png"));
                         break;
                     case 'q':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\bq.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\bq.png"));
                         break;
                     case 'K':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\wk.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\wk.png"));
                         break;
                     case 'k':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\bk.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\bk.png"));
                         break;
                     case 'P':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\wp.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\wp.png"));
                         break;
                     case 'p':
-                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\Images\\bp.png"));
+                        chessBoardSquares[i][j].setIcon(new ImageIcon("src\\main\\icons\\bp.png"));
                         break;
                     default:
                         chessBoardSquares[i][j].setIcon(null);

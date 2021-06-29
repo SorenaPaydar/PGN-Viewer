@@ -1,4 +1,4 @@
-package main.Home;
+package main.home;
 
 import java.util.HashMap;
 public enum Piece {

@@ -1,4 +1,4 @@
-package main.Home;
+package main.home;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

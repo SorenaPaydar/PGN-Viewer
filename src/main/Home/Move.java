@@ -1,4 +1,4 @@
-package main.Home;
+package main.home;
 
 public class Move {
     private Square to;

@@ -1,4 +1,4 @@
-package main.Home;
+package main.home;
 
 import java.util.ArrayList;
 import java.util.HashMap;

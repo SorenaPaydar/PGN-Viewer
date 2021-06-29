@@ -1,10 +1,10 @@
 package main;
 
-import main.chess.GUI;
+import main.program.GUI;
 
 import javax.swing.*;
 
-public class app {
+class app {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
